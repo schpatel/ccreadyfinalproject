@@ -9,18 +9,62 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /*intro*/
-  /* Bridge */ }
+  /* Hero and Bridge */
+  /* Hero and Landscape */ }
   .hero h2 {
     margin-top: 100px;
     margin-bottom: 50px;
     font-size: 40px;
     line-height: 40px; }
-  .hero.landscape {
-    color: white; }
   .hero.bridge {
     background-image: url("../img/bridge/full-width.jpg");
     width: 100%; }
+  .hero.landscape {
+    color: white; }
+
+/* Sidebar */
+.sidebar-wrapper {
+  color: white;
+  font-family: "Roboto", Serif;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  background-color: black;
+  transition: all 0.5s ease; }
+  .sidebar-wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 4px;
+    padding: 0px; }
+  .sidebar-wrapper a {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; }
+  .sidebar-wrapper.open {
+    width: 320px !important; }
+  .sidebar-wrapper #close-btn {
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer; }
+    .sidebar-wrapper #close-btn:hover {
+      opacity: .5; }
+    .sidebar-wrapper #close-btn img {
+      height: 30px;
+      width: 30px; }
+  .sidebar-wrapper .sidebar-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 /* Intro */
 #intro {
@@ -48,6 +92,24 @@
   cursor: pointer; }
   .cta:hover {
     background-color: #00CFFF; }
+
+#hamburger {
+  display: flex;
+  position: fixed;
+  height: 34px;
+  width: 40px;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px; }
+  #hamburger:hover {
+    background-color: #00CFFF; }
+  #hamburger img {
+    height: 30px;
+    width: 30px; }
 
 /* about */
 #about {
